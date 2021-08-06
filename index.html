@@ -18,20 +18,20 @@
       href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./Assets/css/style.css" />
     <title>Work Day Scheduler</title>
   </head>
 
   <body>
     <header class="jumbotron">
-      <h1 class="display-3">Work Day Scheduler</h1>
-      <p class="lead">A simple calendar app for scheduling your work day</p>
+      <h1 class="display-3 text-center">Work Day Scheduler</h1>
+      <p class="lead text-center">A simple calendar app for scheduling your work day</p>
       <p id="currentDay" class="lead"></p>
+      <div class="container">
+        <div id="currentDay" class="col-md-6 m-1 text-md-center">
+        </div>
     </header>
-    <div class="container">
-      <div id="currentDay" class="col-md-12 text-md-center m-3">
-        Current Day:
-      </div>
+    
 
       <!-- This is the 9AM block -->
       <div id="9" class="row time-block">
@@ -44,7 +44,7 @@
           <i class="fas fa-save"></i>
         </button>
       </div>
-      <!-- This is the 9AM block -->
+      <!-- This is the 10AM block -->
       <div id="10" class="row time-block">
         <div class="col-md-1 row">10 AM</div>
         <textarea
@@ -55,7 +55,7 @@
           <i class="fas fa-save"></i>
         </button>
       </div>
-      <!-- This is the 9AM block -->
+      <!-- This is the 11AM block -->
       <div id="11" class="row time-block">
         <div class="col-md-1 row">11 AM</div>
         <textarea
@@ -66,7 +66,7 @@
           <i class="fas fa-save"></i>
         </button>
       </div>
-      <!-- This is the 9AM block -->
+      <!-- This is the 12PM block -->
       <div id="12" class="row time-block">
         <div class="col-md-1 row">12 PM</div>
         <textarea
@@ -77,7 +77,7 @@
           <i class="fas fa-save"></i>
         </button>
       </div>
-      <!-- This is the 9AM block -->
+      <!-- This is the 1PM block -->
       <div id="13" class="row time-block">
         <div class="col-md-1 row">1 PM</div>
         <textarea
@@ -88,7 +88,7 @@
           <i class="fas fa-save"></i>
         </button>
       </div>
-      <!-- This is the 9AM block -->
+      <!-- This is the 2PM block -->
       <div id="14" class="row time-block">
         <div class="col-md-1 row">2 PM</div>
         <textarea
@@ -99,7 +99,7 @@
           <i class="fas fa-save"></i>
         </button>
       </div>
-      <!-- This is the 9AM block -->
+      <!-- This is the 3PM block -->
       <div id="15" class="row time-block">
         <div class="col-md-1 row">3 PM</div>
         <textarea
@@ -110,7 +110,7 @@
           <i class="fas fa-save"></i>
         </button>
       </div>
-      <!-- This is the 9AM block -->
+      <!-- This is the 4PM block -->
       <div id="16" class="row time-block">
         <div class="col-md-1 row">4 PM</div>
         <textarea
@@ -121,7 +121,7 @@
           <i class="fas fa-save"></i>
         </button>
       </div>
-      <!-- This is the 9AM block -->
+      <!-- This is the 5PM block -->
       <div id="17" class="row time-block">
         <div class="col-md-1 row">5 PM</div>
         <textarea
@@ -137,5 +137,6 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="./assets/js/app.js"></script>
   </body>
 </html>

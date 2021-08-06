@@ -1,12 +1,15 @@
-$(document).ready(function () {});
+$(document).ready(function () {
+  //pseudo code
+  // declare variables
+  //create functions
+  $();
+});
 
-// declare variables
-//create functions
-
-//pseudo code
 //when planner is opened, current day is displayed at the top of calendar
+var today = moment();
+$("#currentDay").text(today.format("MMM Do, YYYY"));
 
-//Then upon scroll down, I am presented with timeblocks for standard biz hours
+//Then upon scroll down, I am presented with timeblocks for standard biz hours, done in CSS/HTML
 
 //when timeblocks are viewed for that day, each timebloc is color coded to indicate whether is is in the future
 
