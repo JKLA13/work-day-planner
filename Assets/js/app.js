@@ -1,5 +1,6 @@
-// declare variables
+$(document).ready(function () {});
 
+// declare variables
 //create functions
 
 //pseudo code
@@ -14,3 +15,20 @@
 //When I slick the save btn, then the text for that event is saved in loacl stoarge
 
 //When i refresh the page, then the saved events persist (local storage)
+
+//Things to research on jQuery documentation site
+// .Each (loop) for class time block - local storage grab
+// .siblings
+// .parent.attr $(this) selector
+// .addClass and .removeClass -
+
+// localstorage.getItem
+// localstorage.setItem
+
+//comment can use from jQuery documentation
+
+//event listener on save btns
+
+//.(this) selector for save btns to store key/values entered in local storage
+
+//moment().get/set
