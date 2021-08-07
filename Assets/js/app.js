@@ -1,4 +1,13 @@
-$(document).ready(function () {});
+// localstorage.getItem
+// localstorage.setItem
+$(document).ready(function () {
+  for (var i = 0; i < localStorage.length; i++) {
+    var key = localStorage.key(i);
+    var hour = $("#" + key)
+      .children(".description")
+      .val(localStorage.getItem(key));
+  }
+});
 //when planner is opened, current day is displayed at the top of calendar
 var today = moment();
 $("#currentDay").text(today.format("MMM Do, YYYY"));
@@ -7,43 +16,35 @@ $("#currentDay").text(today.format("MMM Do, YYYY"));
 
 //when timeblocks are viewed for that day, each timeblock is color coded to indicate whether is is in the future
 
-$(".time-block").each(function (timeColor) {
+$(".timeBlockText").each(function (timeColor) {
   var currentTime = moment().hours();
-  var pastHour = parseInt($this).attr("id").split("-")[1];
+  var pastHour = parseInt($(this).parent().attr("id"));
   if (pastHour < currentTime) {
     $(this).addClass("past");
   } else if (pastHour === currentTime) {
     $(this).removeClass("past");
-    $(this).removeClass("present");
+    $(this).removeClass("future");
+    $(this).addClass("present");
   } else {
     $(this).removeClass("past");
     $(this).removeClass("present");
-    $(this).removeClass("future");
+    $(this).addClass("future");
   }
 });
-timeColor();
 
 //event listener on save btns
 //When I click into timeblock, then i can Enter and event
 //When I click the save btn, then the text for that event is saved in local storage
 //.(this) selector for save btns to store key/values entered in local storage
-$(".saveBtn").moment("click", function () {
-  var userKey = $(this).siblings(".description").val();
+$(".saveBtn").on("click", function () {
+  var userInput = $(this).siblings(".description").val();
   var userHour = $(this).parent().attr("id");
   //When i refresh the page, then the saved events persist (local storage)
-  localStorage.setItem(userKey, userHour);
-
-  localStorage.getItem(userKey, userHour);
-  console.localStorage();
+  localStorage.setItem(userHour, userInput);
+  $(".userSaved").text("Saved!");
+  setTimeout(function () {
+    $(".userSaved").text("");
+  }, 2000);
 });
-
-//Things to research on jQuery documentation site
-// .Each (loop) for class time block - local storage grab
-// .siblings
-// .parent.attr $(this) selector
-// .addClass and .removeClass -
-
-// localstorage.getItem
-// localstorage.setItem
-
-//comment can use from jQuery documentation
+// comment git commit issues
+//commit issues still, missing commits

@@ -23,6 +23,7 @@ textarea {
 
 .description {
   white-space: pre-wrap;
+  border-bottom: #000000 solid;
 }
 
 .time-block {
@@ -41,7 +42,7 @@ textarea {
 .hour {
   background-color: #ffffff;
   color: #000000;
-  border-top: 1px solid #000000;
+  border-top: 1px dashed #000000;
 }
 
 .past {
@@ -71,3 +72,8 @@ textarea {
   font-size: 20px;
   transition: all 0.5s ease-in-out;
 }
+
+.userSaved {
+  text-align: center;
+}
+/* missing commits for last few hours, test! */
