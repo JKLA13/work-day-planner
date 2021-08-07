@@ -33,7 +33,7 @@ THEN the saved events persist
 ##Screenshots of Code Quiz
 
 ![Screencap1](./Assets/images/screencap1.PNG "Screencap1")
-![Screencap2](./Assets/images/Screencap2.PNG "Screencap2")
+![Screencap2](./Assets/images/screencap2.PNG "Screencap2")
 
 ## Links
 
