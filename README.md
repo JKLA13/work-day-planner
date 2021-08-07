@@ -32,8 +32,8 @@ THEN the saved events persist
 
 ##Screenshots of Code Quiz
 
-![Screencap1](./assets/images/screencap1.PNG "Screencap1")
-![Screencap2](./assets/images/Screencap2.PNG "Screencap2")
+![Screencap1](./Assets/images/screencap1.PNG "Screencap1")
+![Screencap2](./Assets/images/Screencap2.PNG "Screencap2")
 
 ## Links
 
